@@ -1,0 +1,58 @@
+<!doctype HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fundamental Frequency Ground Truth for Speech Corpora from Multi-Algorithm Consensus</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Fundamental Frequency Ground Truth for Speech Corpora from Multi-Algorithm Consensus</h1>
+    </header>
+
+    <article>
+      <p class="abstract">The fundamental frequency of the human voice is an
+      essential feature for various speech processing tasks such as speech
+      recognition, speaker identification, and speech compression. Therefore, a
+      large number of fundamental frequency estimation algorithms have been
+      developed. To evaluate the performance of these algorithms, their
+      estimates are often compared against a known ground truth fundamental
+      frequency, typically derived from laryngograph recordings. However,
+      laryngograph recordings are not available for all kinds of speech corpora,
+      and can be tonal where the acoustic speech signal is not. Alternatively,
+      fundamental frequency estimates of speech in noise are compared against
+      clean speech estimates of a reference algorithm. While this works for
+      arbitrary speech recordings, it is highly dependent on the reference
+      algorithm. We therefore propose a new method for deriving a fundmental
+      frequency ground truth from the consensus of a number of state-of-the-art
+      fundamental frequency estimation algorithms, which can be calculated for
+      any speech corpus, is more robust than a single algorithm's estimate, and
+      which better reflects the acoustic tonality of speech.</p>
+
+      <p>
+        This website contains the consensus ground truth for the following five
+        speech corpora:
+        <ul>
+          <li>FDA: import script, consensus truth, corpus dataset</li>
+          <li>KEELE: import script, consensus truth, corpus dataset</li>
+          <li>PTDB-TUG: import script, consensus truth, corpus dataset</li>
+          <li>TIMIT: import script, consensus truth</li>
+          <li>MOCHA-TIMIT: import script, consensus truth, corpus dataset</li>
+        </ul>
+      </p>
+      <p>
+        All of these corpora save their data in different formats. This website
+        additionally contains import scripts that convert each of these corpora
+        into a common, human-readable and machine-readable format: JBOF datasets.
+      </p>
+      <p>
+        Source code for reading these datasets is provided under a free license
+        on Github.
+      </p>
+      <p>
+        No complete dataset can be provided for the TIMIT corpus, since its
+        license does not allow for it.
+      </p>
+    </article>
+  </body>
+</html>
