@@ -8,6 +8,7 @@
   <body>
     <header>
       <h1>Fundamental Frequency Ground Truth for Speech Corpora from Multi-Algorithm Consensus</h1>
+      <h2>Companion website to a submitted manuscript for the INTERSPEECH conference 2019</h2>
     </header>
 
     <article>
@@ -30,29 +31,93 @@
       which better reflects the acoustic tonality of speech.</p>
 
       <p>
-        This website contains the consensus ground truth for the following five
-        speech corpora:
+        This website contains the new consensus ground truth data as JBOF
+        datasets, as well as scripts for importing the original datasets as
+        structured <a href="https://jbof.readthedocs.io/en/latest/">JBOF
+        datasets</a>, and those imported datasets, for the following five speech
+        corpora:
         <ul>
-          <li>FDA: <a href="FDA_import.zip">import script</a>, <a href="FDA_pitch.zip">consensus truth</a>, <a href="FDA_dataset.zip">corpus dataset</a></li>
-          <li>KEELE: <a href="KEELE_import.zip">import script</a>, <a href="KEELE_pitch.zip">consensus truth</a>, <a href="KEELE_dataset.zip">corpus dataset</a></li>
-          <li>PTDB-TUG: <a href="PTDB-TUG_import.zip">import script</a>, <a href="PTDB-TUG_pitch.zip">consensus truth</a>, <a href="PTDB-TUG_dataset.zip">corpus dataset</a></li>
-          <li>TIMIT: <a href="TIMIT_import.zip">import script</a>, <a href="TIMIT_pitch.zip">consensus truth</a></li>
-          <li>MOCHA-TIMIT: <a href="MOCHA-TIMIT_import.zip">import script</a>, <a href="MOCHA-TIMIT_pitch.zip">consensus truth</a>, <a href="MOCHA-TIMIT_dataset.zip">corpus dataset</a></li>
+          <li>
+            <a href="http://www.cstr.ed.ac.uk/research/projects/fda/">FDA</a> [<a href="#ref1">1</a>,<a href="#ref2">2</a>]:
+            <a href="FDA_pitch.zip">consensus truth</a>,
+            <a href="FDA_import.zip">import script</a>,
+            <a href="FDA_dataset.zip">corpus dataset</a>
+          </li>
+          <li>
+            <a href="https://lost-contact.mit.edu/afs/nada.kth.se/dept/tmh/corpora/KeelePitchDB/Speech/">KEELE</a> [<a href="#ref3">3</a>]:
+            <a href="KEELE_pitch.zip">consensus truth</a>,
+            <a href="KEELE_import.zip">import script</a>,
+            <a href="KEELE_dataset.zip">corpus dataset</a>
+          </li>
+          <li>
+            <a href="https://www.spsc.tugraz.at/tools/ptdb-tug">PTDB-TUG</a> [<a href="#ref4">4</a>]:
+            <a href="PTDB-TUG_pitch.zip">consensus truth</a>,
+            <a href="PTDB-TUG_import.zip">import script</a>,
+            <a href="PTDB-TUG_dataset.zip">corpus dataset</a> (ODBL license)
+          </li>
+          <li>
+            <a href="https://catalog.ldc.upenn.edu/LDC93S1">TIMIT</a> [<a href="#ref5">5</a>]:
+            <a href="TIMIT_pitch.zip">consensus truth</a>,
+            <a href="TIMIT_import.zip">import script</a> (commercial)
+          </li>
+          <li>
+            <a href="http://www.cstr.ed.ac.uk/research/projects/artic/mocha.html">MOCHA-TIMIT</a> [<a href="#ref6">6</a>]:
+            <a href="MOCHA-TIMIT_pitch.zip">consensus truth</a>,
+            <a href="MOCHA-TIMIT_import.zip">import script</a>,
+            <a href="MOCHA-TIMIT_dataset.zip">corpus dataset</a> (free for noncommercial use)
+          </li>
         </ul>
       </p>
       <p>
-        All of these corpora save their data in different formats. This website
-        additionally contains import scripts that convert each of these corpora
-        into a common, human-readable and machine-readable format: JBOF datasets.
+        The import scripts are: (1) a shell script for downloading the corpora
+        from their original websites, and (2) a Python script for reading that
+        data and importing it into a JBOF dataset. JBOF datasets are a simple
+        file/directory structure for binary data and metadata that is easily
+        accessible both using a file explorer, and a programming language.
       </p>
       <p>
-        Source code for reading these datasets is provided under a free license
-        on Github.
+        Source code for reading JBOF datasets in Python or Matlab is provided
+        under a free license on
+        <a href="https://github.com/bastibe/jbof">Github</a>.
       </p>
       <p>
         No complete dataset can be provided for the TIMIT corpus, since its
         license does not allow for it.
       </p>
+      <h2>References:</h2>
+      <ol class="references">
+        <li id="ref1">
+          P. C. Bagshaw, S. Hiller, and M. A. Jack, “Enhanced Pitch Tracking and
+          the Processing of F0 Contours for Computer Aided Intonation Teaching,”
+          in EUROSPEECH, 1993.
+        </li>
+        <li id="ref2">
+          P. A. Bagshaw, “Automatic prosodic analysis for computer aided
+          pronunciation teaching,” Ph.D. dissertation, University of Edinburgh,
+          Edinburgh, UK, 1994.
+        </li>
+        <li id="ref3">
+          F. Plante, G. F. Meyer, and W. A. Ainsworth, “A Pitch Extraction
+          Reference Database,” in Fourth European Conference on Speech
+          Communication and Technology, Madrid, Spain, 1995, pp. 837–840.
+        </li>
+        <li id="ref4">
+          G. Pirker, M. Wohlmayr, S. Petrik, and F. Pernkopf, “A Pitch Tracking
+          Corpus with Evaluation on Multipitch Tracking Scenario.” in
+          INTERSPEECH, 2011, pp. 1509– 1512.
+        </li>
+        <li id="ref5">
+          A. Wrench, “MOCHA MultiCHannel Articulatory database: English,” Nov.
+          1999. [Online]. Available:
+          http://www.cstr.ed.ac.uk/research/projects/artic/ mocha.html
+        </li>
+        <li id="ref6">
+          J. S. Garofolo, L. F. Lamel, W. M. Fisher, J. G. Fiscus, D. S.
+          Pallett, N. L. Dahlgren, and V. Zue, “TIMIT Acoustic-Phonetic
+          Continuous Speech Corpus,” 1993. [Online]. Available:
+          https://catalog.ldc.upenn.edu/ LDC93S1
+        </li>
+      </ol>
     </article>
   </body>
 </html>
